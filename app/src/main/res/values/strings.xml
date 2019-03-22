@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieCatalogue3</string>
+    <string name="tv_series">TV SERIES</string>
+    <string name="Movies">Movies</string>
+
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="top_rated_tv_series">Top Rated Tv Series</string>
+    <string name="movies_title">Movies Title</string>
+    <string name="movies_desc">Description</string>
+    <string name="tv_series_title">Title</string>
+    <string name="tv_series_desc">Description</string>
+    <string name="rate">Rate</string>
+    <string name="release_date">Release Date</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="popularity">Popularity</string>
+    <string name="poster">Poster</string>
+    <string name="overview">Overview</string>
+    <string name="movie_not_found">Trailer Tidak Ditemukan</string>
+</resources>

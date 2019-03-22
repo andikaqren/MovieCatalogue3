@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="top_rated_movies">20 Movie Terbaik </string>
+    <string name="top_rated_tv_series">20 Tv Series Terbaik </string>
+    <string name="movies_title">Judul Film</string>
+    <string name="movies_desc">Deskripsi </string>
+    <string name="tv_series_title">Judul</string>
+    <string name="tv_series_desc">Deskripsi</string>
+    <string name="rate">Rating</string>
+    <string name="release_date">Waktu Rilis</string>
+    <string name="vote_count">Jumlah Vote </string>
+    <string name="popularity">Popularitas</string>
+    <string name="poster">Poster</string>
+    <string name="overview">Ringkasan Cerita</string>
+    <string name="movie_not_found">Maaf tidak ada trailer untuk film ini</string>
+</resources>

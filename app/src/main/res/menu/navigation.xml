@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Movies"
+        android:icon="@drawable/movies"
+        android:title="@string/Movies" />
+
+
+
+    <item
+        android:id="@+id/navigation_TV_Series"
+        android:icon="@drawable/tvshow"
+        android:title="@string/tv_series" />
+
+</menu>
