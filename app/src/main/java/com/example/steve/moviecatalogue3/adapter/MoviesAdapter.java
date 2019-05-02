@@ -1,4 +1,4 @@
-package com.example.steve.moviecatalogue3;
+package com.example.steve.moviecatalogue3.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.steve.moviecatalogue3.R;
+import com.example.steve.moviecatalogue3.entity.Movie;
 
 import java.util.ArrayList;
 

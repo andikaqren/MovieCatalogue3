@@ -10,10 +10,38 @@
     <string name="tv_series_title">Title</string>
     <string name="tv_series_desc">Description</string>
     <string name="rate">Rate</string>
+    <string name="title_dialog">Are your Sure to Delete ?</string>
     <string name="release_date">Release Date</string>
     <string name="vote_count">Vote Count</string>
     <string name="popularity">Popularity</string>
     <string name="poster">Poster</string>
     <string name="overview">Overview</string>
     <string name="movie_not_found">Trailer Tidak Ditemukan</string>
+    <string name="Favourite">Favorite</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="success_delete">Success to Delete </string>
+    <string name="failed_delete">Failed to Delete </string>
+    <string name="failed_insert_favorit">Failed add to Favourite </string>
+    <string name="success_insert_favorit">Success add to Favourite </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Delete">Delete</string>
+
+    <string name="search_hint">Insert Movie Name Here</string>
+    <string name="search_hint2">Insert TvSeries Name Here</string>
+    <string name="title_activity_subscription">Settings</string>
+
+
+    <string name="release_reminder">Release Reminder</string>
+    <string name="reminder_desc">Reminder Showing the movie that released today</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="daily_reminder_desc">Reminder for return to app</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="log_token">Log token</string>
+    <string name="default_notification_channel_name">News</string>
+    <string name="search_result">Search Result From :</string>
+    <string name="welcome_back">New Movies is coming for you</string>
+
 </resources>

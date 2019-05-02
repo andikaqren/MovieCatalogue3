@@ -1,4 +1,4 @@
-package com.example.steve.moviecatalogue3;
+package com.example.steve.moviecatalogue3.entity;
 
 import org.json.JSONObject;
 

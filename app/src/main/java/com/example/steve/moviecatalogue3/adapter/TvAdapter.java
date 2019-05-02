@@ -1,9 +1,8 @@
-package com.example.steve.moviecatalogue3;
+package com.example.steve.moviecatalogue3.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.steve.moviecatalogue3.R;
+import com.example.steve.moviecatalogue3.entity.TvSeries;
 
 import java.util.ArrayList;
 
@@ -45,7 +46,6 @@ public class TvAdapter extends RecyclerView.Adapter<TvAdapter.CategoryViewHolder
         categoryViewHolder.namaFilm.setText(getTvSeriesList().get(i).getTitle());
 
         categoryViewHolder.rateFilm.setText(String.format("%s %.2f",context.getResources().getString(R.string.rate) , getTvSeriesList().get(i).getVote_average()));
-        Log.d("test", categoryViewHolder.namaFilm.getText().toString());
         categoryViewHolder.descFilm.setText(getTvSeriesList().get(i).getOverview());
         String linkPoster = "https://image.tmdb.org/t/p/w500" + getTvSeriesList().get(i).getPath();
         Glide.with(context)

@@ -1,4 +1,4 @@
-package com.example.steve.moviecatalogue3;
+package com.example.steve.moviecatalogue3.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -6,25 +6,20 @@ import android.util.Log;
 
 import org.json.JSONObject;
 
-public class TvSeries implements Parcelable {
+public class Movie implements Parcelable {
     private int id;
     private int vote_count;
-    private Double vote_average;
-    private String popularity;
-    private String title;
-    private String path;
-    private String overview;
-    private String release_date;
+    private double vote_average;
 
-    public TvSeries(JSONObject object) {
+    public Movie(JSONObject object) {
         try {
             int id = object.getInt("id");
             int vote_count = object.getInt("vote_count");
             double vote_average = object.getDouble("vote_average");
             String popularity = object.getString("popularity");
             String overview = object.getString("overview");
-            String title = object.getString("name");
-            String release_date = object.getString("first_air_date");
+            String title = object.getString("title");
+            String release_date = object.getString("release_date");
             String path = object.getString("poster_path");
             Log.d("pathsss",path);
             this.id = id;
@@ -38,10 +33,13 @@ public class TvSeries implements Parcelable {
 
         } catch (Exception e) {
             e.printStackTrace();
-            Log.d("error",e.toString());
-
         }
     }
+
+    public Movie() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -58,11 +56,11 @@ public class TvSeries implements Parcelable {
         this.vote_count = vote_count;
     }
 
-    public Double getVote_average() {
+    public double getVote_average() {
         return vote_average;
     }
 
-    public void setVote_average(Double vote_average) {
+    public void setVote_average(double vote_average) {
         this.vote_average = vote_average;
     }
 
@@ -106,6 +104,12 @@ public class TvSeries implements Parcelable {
         this.release_date = release_date;
     }
 
+    private String popularity;
+    private String title;
+    private String path;
+    private String overview;
+    private String release_date;
+
     @Override
     public int describeContents() {
         return 0;
@@ -115,7 +119,7 @@ public class TvSeries implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.id);
         dest.writeInt(this.vote_count);
-        dest.writeValue(this.vote_average);
+        dest.writeDouble(this.vote_average);
         dest.writeString(this.popularity);
         dest.writeString(this.title);
         dest.writeString(this.path);
@@ -123,10 +127,10 @@ public class TvSeries implements Parcelable {
         dest.writeString(this.release_date);
     }
 
-    protected TvSeries(Parcel in) {
+    protected Movie(Parcel in) {
         this.id = in.readInt();
         this.vote_count = in.readInt();
-        this.vote_average = (Double) in.readValue(Double.class.getClassLoader());
+        this.vote_average = in.readDouble();
         this.popularity = in.readString();
         this.title = in.readString();
         this.path = in.readString();
@@ -134,15 +138,15 @@ public class TvSeries implements Parcelable {
         this.release_date = in.readString();
     }
 
-    public static final Parcelable.Creator<TvSeries> CREATOR = new Parcelable.Creator<TvSeries>() {
+    public static final Parcelable.Creator<Movie> CREATOR = new Parcelable.Creator<Movie>() {
         @Override
-        public TvSeries createFromParcel(Parcel source) {
-            return new TvSeries(source);
+        public Movie createFromParcel(Parcel source) {
+            return new Movie(source);
         }
 
         @Override
-        public TvSeries[] newArray(int size) {
-            return new TvSeries[size];
+        public Movie[] newArray(int size) {
+            return new Movie[size];
         }
     };
 }
