@@ -11,6 +11,30 @@
     <string name="vote_count">Jumlah Vote </string>
     <string name="popularity">Popularitas</string>
     <string name="poster">Poster</string>
+    <string name="Delete">Hapus</string>
+    <string name="Favourite">Favorit</string>
+    <string name="title_dialog">Apa anda yakin untuk menghapus ?</string>
+    <string name="success_delete">Sukses Menghapus </string>
+    <string name="failed_delete">Gagal Menghapus </string>
+    <string name="failed_insert_favorit">Gagal Menambahkan ke daftar favorit </string>
+    <string name="success_insert_favorit">Berhasil Ditambahkan ke daftar favorit </string>
+
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
     <string name="overview">Ringkasan Cerita</string>
     <string name="movie_not_found">Maaf tidak ada trailer untuk film ini</string>
+    <string name="search_hint">Masukan nama movie disini</string>
+    <string name="search_hint2">Masukan nama tv series disini</string>
+    <string name="title_activity_subscription">Settings</string>
+
+
+    <string name="release_reminder">Pengingat film terbaru</string>
+    <string name="reminder_desc">Pengingat film film terbaru yang sedang tayang hari ini</string>
+    <string name="daily_reminder">Pengingat harian</string>
+    <string name="daily_reminder_desc">Pengingat untuk kembali ke aplikasi ini</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="log_token">Log token</string>
+    <string name="default_notification_channel_name">News</string>
+
 </resources>

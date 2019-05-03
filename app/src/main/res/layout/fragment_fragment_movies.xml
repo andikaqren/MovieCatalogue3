@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_movies">
+    tools:context=".fragment.Fragment_movies">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -14,8 +14,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/top_rated_movies"
+            android:id="@+id/topratemovies"
             android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            android:background="#EE000000"
+            android:textColor="#EEFFFFFF"
             android:textSize="@dimen/title_size"
             android:fontFamily="casual"/>
 
@@ -33,5 +35,6 @@
             android:layout_height="match_parent"
             android:id="@+id/progress_movies"/>
     </LinearLayout>
+
 
 </FrameLayout>

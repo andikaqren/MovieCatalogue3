@@ -1,8 +1,9 @@
-package com.example.steve.moviecatalogue3;
+package com.example.steve.moviecatalogue3.listener;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.AdapterView;
+
+import com.example.steve.moviecatalogue3.R;
 
 public class ItemClickSupport {
     private final RecyclerView mRecyclerView;
